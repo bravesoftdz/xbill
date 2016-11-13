@@ -1,0 +1,13 @@
+Error 00134. 0x300010 (Thread 0x0B68):
+Resource leak: The object array (0x50921B4) was never deleted
+
+The object array (0x050921B4) [size: 132 bytes] was created with new[]
+Call Tree:
+   0x0041C3BE(=billtest.exe:0x01:01B3BE) F:\work\utils\tools\binmat.cpp#65
+   0x0041CD05(=billtest.exe:0x01:01BD05) F:\work\utils\tools\binmat.cpp#273
+   0x0041FECE(=billtest.exe:0x01:01EECE) F:\work\utils\coding\block\ldpc.cpp#445
+   0x00401DC2(=billtest.exe:0x01:000DC2) F:\work\billing\jumble.h#94
+   0x00426ECB(=billtest.exe:0x01:025ECB) F:\work\billing\prefetch.cpp#27
+   0x00424808(=billtest.exe:0x01:023808) F:\work\billing\viewer.cpp#486
+
+------------------------------------------

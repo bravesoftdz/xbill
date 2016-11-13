@@ -1,0 +1,344 @@
+object Form2: TForm2
+  Left = 444
+  Top = 109
+  Width = 705
+  Height = 881
+  VertScrollBar.Visible = False
+  Caption = 'TM eBill Viewer v1.0.0 [alpha]'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020000000000000A80800001600000028000000200000004000
+    0000010008000000000080040000000000000000000000000000000000007943
+    30006057CD004124CE002D7EEC00538AD6006498E1008B422B00874835009B49
+    2E0095462C0098483200A34B300090554500A77668009D6858008775CF00B187
+    7800C48E7D00B8948A0099AAE600D1B5AB00C6A19300DEC7BA00CCD3F600D0E7
+    FA00FFFFFF00FEFEFE00FCFEFD00FAF8F600F2EFF000E7D6CE00AECAF4000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000001919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191A19
+    19191919191919191919191919191919191919191919191919191A1919191919
+    191D1215151C19191E15151D19161215151D191415151E191919191919191919
+    191E0A060C1D19191E0906141912090906101A10060611191919191919191A1A
+    191C0E09091E19191D0E061219100908080A1E1409090D1A1919191919191919
+    191A1009091419191A0D090D1B0D09080809151E0A060E1D1919191919191A1A
+    19191509091019191912090E1D0E090A0E090E1E0E090A1E1919191919191B1B
+    19191609090E1C191914090A1E0E090A140C09140D0909161919191919191A19
+    19191E0A080C1D19191E0A09140E090A1E11060D100909121919191919191919
+    19191C0E09091E19191D0E09100E090A1D1E090A1008090D1A1919191919191B
+    1C1C1C0D0909151C1B190D090C0A080C1D1B0D090C08090E1D1919191919191E
+    0E0E0E0C0808070E0E1415060808080E1D19140608080A0A1E191A19191A191C
+    0E060609090909060607120A0909090E1C191D0E0609090614191A1919191919
+    1E1512111111111111111416121111151B19191E151212121E191A1919191919
+    191919191919191919191919191919191919191B1C1919191919191919191919
+    191919191919191919191919191919191919191D05131D1B19191919191A1919
+    19191919191919191919191B1B191919191919191303051F1313171F0F171919
+    19191919191919191919191A1F1F1C1A19191919130303130F02020202171919
+    1919191919191919191919191D1304051F171713030303051B1F0101131B1919
+    191919191919191919191919191D0403030303030303041319191C1D19191A1A
+    191919191919191A1A1A191919191C1F040303030303051D1919191919191A1A
+    191919191919191A1A1A191919191919181F0505051318191919191919191919
+    1919191919191919191919191919191919191B1C1B1A19191919191919191A1A
+    191919191A1A1A1A1A1A1A1A1A191919191919191919191919191919191A1919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919191919
+    1919191919191919191919191919191919191919191919191919191919190000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000}
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 808
+    Width = 697
+    Height = 19
+    Panels = <
+      item
+        Text = 'Previous Prefetch'
+        Width = 50
+      end
+      item
+        Text = 'Current Prefetch'
+        Width = 50
+      end
+      item
+        Text = 'Next Prefetch'
+        Width = 50
+      end
+      item
+        Text = 'OK'
+        Width = 50
+      end
+      item
+        Style = psOwnerDraw
+        Width = 50
+      end>
+    SimplePanel = False
+    OnDrawPanel = StatusBar1DrawPanel
+  end
+  object Display: TRichEdit
+    Left = 1
+    Top = 0
+    Width = 672
+    Height = 769
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Courier New'
+    Font.Pitch = fpFixed
+    Font.Style = []
+    Lines.Strings = (
+      'Display')
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 1
+    OnSelectionChange = DisplaySelectionChange
+  end
+  object ProgressBar1: TProgressBar
+    Left = 400
+    Top = 496
+    Width = 150
+    Height = 17
+    Min = 0
+    Max = 100
+    TabOrder = 2
+  end
+  object Panel1: TPanel
+    Left = 240
+    Top = 760
+    Width = 177
+    Height = 25
+    BevelOuter = bvNone
+    TabOrder = 3
+    object btEnd: TButton
+      Left = 152
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = 'End'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      OnClick = LastPage1Click
+    end
+    object Button3: TButton
+      Left = 120
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = '>>'
+      TabOrder = 1
+      OnClick = AutoForward1Click
+    end
+    object Button4: TButton
+      Left = 88
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = '>'
+      TabOrder = 2
+      OnClick = Forward1Click
+    end
+    object Button5: TButton
+      Left = 64
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = '<'
+      TabOrder = 3
+      OnClick = PreviousPage1Click
+    end
+    object Button6: TButton
+      Left = 32
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = '<<'
+      TabOrder = 4
+      OnClick = AutoReverse1Click
+    end
+    object btHome: TButton
+      Left = 0
+      Top = 1
+      Width = 25
+      Height = 25
+      Caption = 'Home'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Courier New'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 5
+      OnClick = Home1Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = '*.tm'
+    Filter = 'TM Bill|*.tm|All files|*.*'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing, ofDontAddToRecent]
+    Left = 488
+    Top = 96
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = Timer1Timer
+    Left = 200
+    Top = 200
+  end
+  object Timer2: TTimer
+    Enabled = False
+    Interval = 750
+    OnTimer = Timer2Timer
+    Left = 224
+    Top = 200
+  end
+  object Timer3: TTimer
+    OnTimer = Timer3Timer
+    Left = 248
+    Top = 200
+  end
+  object PendingTimer: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = PendingTimerTimer
+    Left = 272
+    Top = 200
+  end
+  object MainMenu1: TMainMenu
+    Left = 176
+    Top = 152
+    object N1: TMenuItem
+      Caption = '&File'
+      object Load1: TMenuItem
+        Caption = 'L&oad'
+        ShortCut = 16463
+        OnClick = Load1Click
+      end
+      object N2: TMenuItem
+        Caption = '-'
+      end
+      object Exit1: TMenuItem
+        Caption = 'E&xit'
+        ShortCut = 16472
+        OnClick = Exit1Click
+      end
+    end
+    object Operation1: TMenuItem
+      Caption = '&Operation'
+      object Forward1: TMenuItem
+        Caption = '&Next Page'
+        ShortCut = 122
+        OnClick = Forward1Click
+      end
+      object PreviousPage1: TMenuItem
+        Caption = '&Previous Page'
+        ShortCut = 123
+        OnClick = PreviousPage1Click
+      end
+      object N4: TMenuItem
+        Caption = '-'
+      end
+      object Home1: TMenuItem
+        Caption = '&F&irst Page'
+        ShortCut = 16456
+        OnClick = Home1Click
+      end
+      object LastPage1: TMenuItem
+        Caption = '&Last Page'
+        ShortCut = 16453
+        OnClick = LastPage1Click
+      end
+      object Gotopage1: TMenuItem
+        Caption = '&Goto page'
+        ShortCut = 16455
+        OnClick = Gotopage1Click
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object AutoForward1: TMenuItem
+        Caption = 'Auto &Forward'
+        ShortCut = 16454
+        OnClick = AutoForward1Click
+      end
+      object AutoReverse1: TMenuItem
+        Caption = 'Auto &Reverse'
+        ShortCut = 16466
+        OnClick = AutoReverse1Click
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object SetTiming1: TMenuItem
+        Caption = 'Set &Timing'
+        OnClick = SetTiming1Click
+      end
+    end
+    object Extt1: TMenuItem
+      Caption = 'Analysis'
+      object ListAll1: TMenuItem
+        Caption = 'List All'
+        OnClick = ListAll1Click
+      end
+      object GroupList1: TMenuItem
+        Caption = 'Group List'
+        OnClick = GroupList1Click
+      end
+      object CallDetail1: TMenuItem
+        Caption = 'Call Detail'
+        OnClick = CallDetail1Click
+      end
+    end
+    object About1: TMenuItem
+      Caption = '&About'
+      OnClick = About1Click
+    end
+  end
+end

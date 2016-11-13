@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="billtest.exe"/>
+    <OBJFILES value="billtest.obj test.obj ..\bzip2\blocksort.obj ..\bzip2\bzlib.obj 
+      ..\bzip2\compress.obj ..\bzip2\crctable.obj ..\bzip2\decompress.obj 
+      ..\bzip2\huffman.obj ..\bzip2\randtable.obj processthread.obj fec.obj 
+      jumble.obj bitchar.obj fileprotect.obj ..\utils\tools\ext_utilitis.obj 
+      ..\utils\tools\interleaver.obj ..\utils\tools\tools.obj 
+      ..\utils\tools\utilitis.obj ..\utils\tools\binmat.obj 
+      ..\utils\tools\binsparse.obj ..\utils\coding\block\ldpc.obj 
+      ..\utils\queue\list.obj ..\utils\rand\randgen.obj ..\bzip2\bznostdio.obj 
+      analyzer.obj viewer.obj prefetch.obj encoder.obj about.obj dbcreate.obj"/>
+    <RESFILES value="billtest.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) test.dfm viewer.dfm encoder.dfm about.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="bdecds.lib dbexpress.lib cds.lib bdertl.lib dsnap.lib dbrtl.lib vclx.lib 
+      rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib vclx.lib dbrtl.lib dsnap.lib bdertl.lib cds.lib 
+      dbexpress.lib bdecds.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\bzip2;..\utils\tools;..\utils\coding\block;..\utils\queue;..\utils\rand"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="BZ_NO_STDIO;_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="billtest.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\include;$(BCB)\include\vcl;..\bzip2;E:\utils;..\utils"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;&quot;D:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2;E:\utils"/>
+    <WARNINGS value="-w-mes -w-pcm -w-par -w-8027 -w-aus"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; 
+      -I&quot;D:\Program Files\Borland\CBuilder6\Projects&quot; -I..\utils\rand 
+      -I..\utils\queue -I..\utils\coding\block -I..\utils\tools -I$(BCB)\include 
+      -I$(BCB)\include\vcl -I..\bzip2 -IE:\utils -I..\utils -src_suffix cpp 
+      -DBZ_NO_STDIO -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=&quot;$(BCB)\lib\vcl60.csm&quot; -Hc -ff -X- -r- -a8 -6 -b -k -y -v -vi-"/>
+    <PFLAGS value="-$Y+ -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zi"/>
+    <LFLAGS value="-D&quot;&quot; -H:0x400000 -Hc:0x10000 -S:0x900000 -Sc:0x20000 -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="billtest.res" FORMNAME="" UNITNAME="billtest.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="billtest.cpp" FORMNAME="" UNITNAME="billtest" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="test.cpp" FORMNAME="Form1" UNITNAME="test" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\blocksort.c" FORMNAME="" UNITNAME="blocksort.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\bzlib.c" FORMNAME="" UNITNAME="bzlib.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\compress.c" FORMNAME="" UNITNAME="compress.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\crctable.c" FORMNAME="" UNITNAME="crctable.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\decompress.c" FORMNAME="" UNITNAME="decompress.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\huffman.c" FORMNAME="" UNITNAME="huffman.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\randtable.c" FORMNAME="" UNITNAME="randtable.c" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\bzlib.h" FORMNAME="" UNITNAME="bzlib.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\bzlib_private.h" FORMNAME="" UNITNAME="bzlib_private.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="processthread.cpp" FORMNAME="" UNITNAME="processthread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="fec.cpp" FORMNAME="" UNITNAME="fec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="jumble.cpp" FORMNAME="" UNITNAME="jumble" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="bitchar.cpp" FORMNAME="" UNITNAME="bitchar" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="fileprotect.cpp" FORMNAME="" UNITNAME="fileprotect" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\ext_utilitis.cpp" FORMNAME="" UNITNAME="ext_utilitis.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\interleaver.cpp" FORMNAME="" UNITNAME="interleaver.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\tools.cpp" FORMNAME="" UNITNAME="tools.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\utilitis.cpp" FORMNAME="" UNITNAME="utilitis.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\binmat.cpp" FORMNAME="" UNITNAME="binmat.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\tools\binsparse.cpp" FORMNAME="" UNITNAME="binsparse.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\coding\block\ldpc.cpp" FORMNAME="" UNITNAME="ldpc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\queue\list.cpp" FORMNAME="" UNITNAME="list" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\utils\rand\randgen.cpp" FORMNAME="" UNITNAME="randgen" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\bzip2\bznostdio.c" FORMNAME="" UNITNAME="bznostdio" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="analyzer.cpp" FORMNAME="" UNITNAME="analyzer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="viewer.cpp" FORMNAME="Form2" UNITNAME="viewer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="prefetch.cpp" FORMNAME="" UNITNAME="prefetch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="encoder.cpp" FORMNAME="Form3" UNITNAME="encoder" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="about.cpp" FORMNAME="AboutBox" UNITNAME="about" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="dbcreate.cpp" FORMNAME="" UNITNAME="dbcreate" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <FILES>
+    <FILE type="override" value="..\bzip2\bzlib.c" translator="Auto">
+      <CFLAG1 value=" -O2"/>
+    </FILE>
+    <FILE type="override" value="prefetch.cpp" translator="Auto">
+    </FILE>
+    <FILE type="override" value="jumble.cpp" translator="Auto">
+    </FILE>
+    <FILE type="override" value="test.cpp" translator="Auto">
+    </FILE>
+  </FILES>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=0
+Release=0
+Build=2
+Debug=1
+PreRelease=1
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=TM Research &amp; Development
+FileDescription=TM eBill Encoder
+FileVersion=1.0.0.2
+InternalName=billenc
+LegalCopyright=Copyright (c) 2006
+LegalTrademarks=All Rights Reserved
+OriginalFilename=
+ProductName=TM eBill Encoder
+ProductVersion=1.0.0.0
+Comments=Internal Use Only. Confidential 
+
+[HistoryLists\hlIncludePath]
+Count=12
+Item0=C:\Program Files\Borland\CBuilder6\Projects;D:\Program Files\Borland\CBuilder6\Projects;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\include;$(BCB)\include\vcl;..\bzip2;E:\utils;..\utils
+Item1=D:\Program Files\Borland\CBuilder6\Projects;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\include;$(BCB)\include\vcl;..\bzip2;E:\utils;..\utils
+Item2=D:\Program Files\Borland\CBuilder6\Projects;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\include;$(BCB)\include\vcl;..\bzip2;..\utils
+Item3=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\include;$(BCB)\include\vcl;..\bzip2;..\utils
+Item4=$(BCB)\include;$(BCB)\include\vcl;..\bzip2;..\utils
+Item5=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;E:\utils\queue;E:\utils\rand;E:\utils\tools;E:\utils\coding\block;..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\include;$(BCB)\include\vcl;E:\utils
+Item6=E:\utils\queue;E:\utils\rand;E:\utils\tools;E:\utils\coding\block;..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\include;$(BCB)\include\vcl;E:\utils
+Item7=..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\include;$(BCB)\include\vcl;E:\utils
+Item8=..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\include;$(BCB)\include\vcl;E:\utils;F:\work\bzip2
+Item9=C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\include;$(BCB)\include\vcl;E:\utils;F:\work\bzip2
+Item10=$(BCB)\include;$(BCB)\include\vcl;E:\utils;F:\work\bzip2
+Item11=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=13
+Item0=C:\Program Files\Borland\CBuilder6\Projects;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2;E:\utils
+Item1=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2;E:\utils
+Item2=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2
+Item3=D:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2
+Item4=D:\Program Files\Borland\CBuilder6\Projects;..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2
+Item5=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2
+Item6=$(BCB)\lib\obj;$(BCB)\lib;..\utils;..\bzip2
+Item7=..\utils\rand;..\utils\queue;..\utils\coding\block;..\utils\tools;E:\utils\queue;E:\utils\rand;E:\utils\tools;E:\utils\coding\block;..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\lib\obj;$(BCB)\lib
+Item8=E:\utils\queue;E:\utils\rand;E:\utils\tools;E:\utils\coding\block;..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\lib\obj;$(BCB)\lib
+Item9=..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;$(BCB)\lib\obj;$(BCB)\lib
+Item10=..\bzip2;C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;F:\work\bzip2;$(BCB)\lib\obj;$(BCB)\lib
+Item11=C:\Program Files\Borland\CBuilder6\Projects;F:\work\biling;F:\work\bzip2;$(BCB)\lib\obj;$(BCB)\lib
+Item12=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=4
+Item0=BZ_NO_STDIO;_DEBUG
+Item1=BZ_NO_STDIO
+Item2=_DEBUG;BZ_NO_STDIO
+Item3=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
